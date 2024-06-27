@@ -1,15 +1,14 @@
-.background {
+body {
+  background-image: url(foto/background.jpg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  position: static;
-}
-
-body {
-  background-image: url(foto/background.jpg);
-  width: 100%;
-  height: 50%;
+  padding-top: 56px; /* Height of the navbar */
+  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .nav {
@@ -22,7 +21,17 @@ body {
   top: 0;
   width: 100%;
   z-index: 1000;
-  padding: 10px 20px; /* Memberikan padding agar logo tidak terlalu dekat dengan tepi */
+  padding: 10px 20px;
+}
+
+.nav-item {
+  text-decoration: none;
+  margin: 10px; /* Sesuaikan margin sesuai kebutuhan */
+  color: white;
+}
+
+.nav-item:hover {
+  color: #f9532d;
 }
 
 .logo {
@@ -32,14 +41,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  margin-bottom: -150px;
+  margin-bottom: 0%;
   text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
-}
-
-.nav-item {
-  text-decoration: none;
-  margin: 20px; /* Sesuaikan margin sesuai kebutuhan */
-  color: white;
 }
 
 .container {
@@ -63,7 +66,7 @@ body {
 }
 
 .foto {
-  margin-top: 10vh;
+  margin-top: 0vh;
   width: 200px; /* Adjust size as needed */
   height: auto;
   box-shadow: 10px 7px #00000062;

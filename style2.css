@@ -1,0 +1,96 @@
+body {
+  background-image: url(foto/background.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-top: 56px; /* Height of the navbar */
+  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: black;
+  display: flex;
+  justify-content: center; /* Menyusun item secara horizontal dan memisahkan logo dan item lainnya */
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+.nav-item {
+  text-decoration: none;
+  margin: 10px; /* Sesuaikan margin sesuai kebutuhan */
+  color: white;
+}
+
+.nav-item:hover {
+  color: #f9532d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-image {
+  width: 50%; /* Atur lebar gambar sesuai kebutuhan Anda */
+  height: auto; /* Biarkan tinggi menyesuaikan secara otomatis */
+  margin-right: 50px;
+  margin-top: 0%;
+  box-shadow: 10px 7px #00000062;
+  border-radius: 5%;
+}
+
+.right-text {
+  max-width: 650px;
+  margin-top: 0%;
+}
+
+.right-text h1 {
+    font-size: 3em; /* Ukuran font untuk headline */
+    margin-bottom: 10px; /* Jarak bawah headline */
+    background-color: white; /* Warna background putih */
+    padding: 10px 15px; /* Ruang di dalam kotak */
+    border-radius: 5px; /* Sudut melengkung */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek mengangkat */
+    display: inline-block; /* Agar kotak hanya meliputi teks */
+}
+
+.logo {
+  max-width: 300px; /* Atur ukuran logo sesuai kebutuhan */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 0%;
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .right-text {
+    max-width: 100%;
+  }
+}

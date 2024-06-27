@@ -1,0 +1,134 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+  background-image: url(foto/background.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding-top: 56px; /* Height of the navbar */
+  font-family: "Arial", sans-serif;
+}
+
+.nav {
+  background-color: black;
+  display: flex;
+  justify-content: center; /* Menyusun item secara horizontal dan memisahkan logo dan item lainnya */
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+.nav-item {
+  text-decoration: none;
+  margin: 20px; /* Sesuaikan margin sesuai kebutuhan */
+  color: white;
+}
+
+.nav-item:hover {
+  color: #f9532d;
+}
+
+.logo {
+  max-width: 50vh; /* Atur ukuran logo sesuai kebutuhan */
+  height: auto;
+  margin-left: 20px; /* Jarak antara logo dengan tepi kiri navbar */
+  filter: drop-shadow(2px 0px 3px #d21369);
+}
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.card {
+  margin: 20px;
+  width: 18rem;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  filter: grayscale(100%);
+  transition: filter 0.5s, transform 0.3s;
+}
+
+.card:hover .card-img-top {
+  filter: grayscale(0%);
+}
+
+.card-body {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.footer {
+  position: static;
+  left: 0;
+  bottom: 100px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .logo {
+    max-width: 40vh;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 30vh;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin: 10px 0;
+  }
+}

@@ -114,6 +114,7 @@ span {
   font-size: 40px;
   width: 10vh;
   text-align: center;
+  justify-content: center;
   text-decoration: none;
   border-radius: 50%;
   transition: 0.3s;

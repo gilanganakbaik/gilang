@@ -117,7 +117,7 @@ span {
   text-decoration: none;
   border-radius: 50%;
   transition: 0.3s;
-  margin-left: 0px;
+  margin-left: -10px;
 }
 
 .fa:hover {

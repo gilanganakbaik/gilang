@@ -59,13 +59,13 @@ body {
 }
 
 .right-text h1 {
-    font-size: 3em; /* Ukuran font untuk headline */
-    margin-bottom: 10px; /* Jarak bawah headline */
-    background-color: white; /* Warna background putih */
-    padding: 10px 15px; /* Ruang di dalam kotak */
-    border-radius: 5px; /* Sudut melengkung */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek mengangkat */
-    display: inline-block; /* Agar kotak hanya meliputi teks */
+  font-size: 3em; /* Ukuran font untuk headline */
+  margin-bottom: 10px; /* Jarak bawah headline */
+  background-color: white; /* Warna background putih */
+  padding: 10px 15px; /* Ruang di dalam kotak */
+  border-radius: 5px; /* Sudut melengkung */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek mengangkat */
+  display: inline-block; /* Agar kotak hanya meliputi teks */
 }
 
 .logo {
@@ -74,8 +74,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  margin-bottom: 0%;
+  margin-top: 100px;
+  margin-bottom: 0px;
   text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
 }
 

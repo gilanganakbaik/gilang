@@ -40,10 +40,14 @@ body {
 }
 
 .logo {
-  max-width: 50vh; /* Atur ukuran logo sesuai kebutuhan */
+  max-width: 300px; /* Atur ukuran logo sesuai kebutuhan */
   height: auto;
-  margin-left: 20px; /* Jarak antara logo dengan tepi kiri navbar */
-  filter: drop-shadow(2px 0px 3px #d21369);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
 }
 
 
